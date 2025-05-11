@@ -69,7 +69,7 @@ export const Features = () => {
             </span>
             <h2 className="text-2xl md:text-5xl font-bold text-center">
               Your Whole Business in <br />
-              <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text leading-normal">
+              <span className="bg-gradient-to-b from-gray-800 to-primary text-transparent bg-clip-text leading-normal">
                 One Dashboard
               </span>
             </h2>

@@ -11,7 +11,7 @@ export const Cta = () => {
           <h2 className="text-2xl md:text-4xl font-bold text-center">
             You already change lives,
             <br />
-            <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text leading-relaxed">
+            <span className="bg-gradient-to-b from-gray-800 to-primary text-transparent bg-clip-text leading-relaxed">
               {" "}
               let's make it easier.{" "}
             </span>
