@@ -1,6 +1,5 @@
 import { buttonVariants } from "./ui/button";
 // import { HeroCards } from "./HeroCards";
-import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { CircleCheck, LucideIcon } from "lucide-react";
 import hero from "@/assets/hero.webp";
