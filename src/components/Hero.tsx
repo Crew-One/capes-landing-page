@@ -77,10 +77,8 @@ export const Hero = () => {
             </span>{" "}
             developers
           </h2> */}
-                <h3>
-                  Connect, Manage and
-                  <br />
-                  Monetize your Audience
+                <h3 className="bg-gradient-to-b from-foreground to-primary text-transparent bg-clip-text">
+                  Connect, Manage and Monetize your Audience
                   {/* <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
               cape{" "}
             </span>
@@ -110,7 +108,6 @@ export const Hero = () => {
               <div className="space-y-4 md:space-y-0 md:space-x-4">
                 <a
                   href="https://creator.capes.app/signup"
-                  target="_blank"
                   className={`w-full md:w-1/3 md:h-14 text-base font-semibold custom-gradient-border ${buttonVariants(
                     {
                       variant: "default",

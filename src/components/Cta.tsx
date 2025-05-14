@@ -25,7 +25,6 @@ export const Cta = () => {
           <div className="flex flex-col md:flex-row gap-2 md:gap-4 items-center justify-center">
             <a
               href="https://creator.capes.app/signup"
-              target="_blank"
               className={`w-full md:w-1/5 md:h-14 text-base font-semibold custom-gradient-border ${buttonVariants(
                 {
                   variant: "default",

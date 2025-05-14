@@ -67,9 +67,9 @@ export const Navbar = () => {
                 </Menu>
               </SheetTrigger>
 
-              <SheetContent side="left" className="w-[250px] max-w-[80vw]">
+              <SheetContent side="top" className="m-4 p-3 rounded-xl">
                 <SheetHeader>
-                  <SheetTitle className="font-bold text-xl text-primary text-left">
+                  <SheetTitle className="font-bold text-xl text-primary text-left px-3">
                     CAPES.APP
                   </SheetTitle>
                 </SheetHeader>
@@ -88,6 +88,24 @@ export const Navbar = () => {
                       {label}
                     </a>
                   ))}
+                  <a
+                    rel="noreferrer noopener"
+                    href="https://creator.capes.app/login"
+                    className={`h-11 font-semibold border ${buttonVariants({
+                      variant: "outline",
+                    })}`}
+                  >
+                    Login
+                  </a>
+                  <a
+                    rel="noreferrer noopener"
+                    href="https://creator.capes.app/signup"
+                    className={`h-11 font-semibold border ${buttonVariants({
+                      variant: "default",
+                    })}`}
+                  >
+                    Get Started
+                  </a>
                 </nav>
               </SheetContent>
             </Sheet>
@@ -113,7 +131,6 @@ export const Navbar = () => {
             <a
               rel="noreferrer noopener"
               href="https://creator.capes.app/login"
-              target="_blank"
               className={`h-11 !rounded-lg font-semibold border ${buttonVariants(
                 {
                   variant: "outline",
@@ -125,7 +142,6 @@ export const Navbar = () => {
             <a
               rel="noreferrer noopener"
               href="https://creator.capes.app/signup"
-              target="_blank"
               className={`h-11 !rounded-lg font-semibold border ${buttonVariants(
                 {
                   variant: "default",
