@@ -56,7 +56,7 @@ export const FeatureOfferings = () => {
   return (
     <section
       className="py-10 md:py-20 bg-card rounded-t-[40px] overflow-hidden"
-      id="features"
+      id="featuresOfferings"
     >
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-6xl">

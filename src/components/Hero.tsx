@@ -46,7 +46,7 @@ export const Hero = () => {
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="w-full px-2 md:px-10 text-start space-y-6 mx-auto max-w-6xl overflow-hidden"
             >
-              <div className="flex items-center  border-[1px] border-amber-400 rounded-full w-fit h-fit px-4 py-2">
+              {/* <div className="flex items-center  border-[1px] border-amber-400 rounded-full w-fit h-fit px-4 py-2">
                 <span
                   className="relative flex h-2 w-2"
                   data-svelte-h="svelte-n36up"
@@ -63,8 +63,7 @@ export const Hero = () => {
                   Coming Soon
                 </span>
                 &nbsp;&nbsp;🚀
-                {/* <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" /> */}
-              </div>
+              </div> */}
               <main className="text-3xl md:text-5xl font-bold !leading-tight">
                 {/* <h1 className="inline">
             <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
@@ -111,7 +110,7 @@ export const Hero = () => {
 
               <div className="space-y-4 md:space-y-0 md:space-x-4">
                 <a
-                  href="https://app.youform.com/forms/kadk8slp"
+                  href="https://creator.capes.app/signup"
                   target="_blank"
                   className={`w-full md:w-1/3 md:h-14 text-base font-semibold custom-gradient-border ${buttonVariants(
                     {
@@ -119,7 +118,7 @@ export const Hero = () => {
                     }
                   )}`}
                 >
-                  Join Waitlist
+                  Join Now
                 </a>
                 <a
                   rel="noreferrer noopener"

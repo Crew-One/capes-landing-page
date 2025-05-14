@@ -9,10 +9,11 @@ import {
   SheetContent,
   SheetHeader,
   SheetTitle,
+  SheetTrigger,
 } from "@/components/ui/sheet";
 
 import { buttonVariants } from "./ui/button";
-// import { Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
 
 interface RouteProps {
@@ -21,18 +22,22 @@ interface RouteProps {
 }
 
 const routeList: RouteProps[] = [
-  // {
-  //   href: "#features",
-  //   label: "Features",
-  // },
-  // {
-  //   href: "#services",
-  //   label: "Offerings",
-  // },
-  // {
-  //   href: "#faq",
-  //   label: "FAQ",
-  // },
+  {
+    href: "#capesFeatures",
+    label: "Features",
+  },
+  {
+    href: "#dashboard",
+    label: "Dashboard",
+  },
+  {
+    href: "#services",
+    label: "Offerings",
+  },
+  {
+    href: "#howItWorks",
+    label: "How it Works",
+  },
 ];
 
 export const Navbar = () => {
@@ -40,7 +45,7 @@ export const Navbar = () => {
   return (
     <header className="sticky top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background py-1">
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-14  px-8 w-screen flex justify-between ">
+        <NavigationMenuList className="container h-16  px-8 w-screen flex justify-between ">
           <NavigationMenuItem className="font-bold flex">
             <a
               rel="noreferrer noopener"
@@ -53,17 +58,15 @@ export const Navbar = () => {
 
           {/* mobile */}
           <span className="flex md:hidden">
-            <ModeToggle />
-
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
-              {/* <SheetTrigger className="px-2">
+              <SheetTrigger className="px-2">
                 <Menu
                   className="flex md:hidden h-5 w-5"
                   onClick={() => setIsOpen(true)}
                 >
                   <span className="sr-only">Menu Icon</span>
                 </Menu>
-              </SheetTrigger> */}
+              </SheetTrigger>
 
               <SheetContent side="left" className="w-[250px] max-w-[80vw]">
                 <SheetHeader>
@@ -107,17 +110,32 @@ export const Navbar = () => {
             ))}
           </nav>
 
-          <div className="hidden md:flex gap-2">
-            {/* <a
+          <div className="hidden md:flex gap-3">
+            <a
               rel="noreferrer noopener"
-              // href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+              href="https://creator.capes.app/login"
               target="_blank"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
+              className={`h-11 !rounded-lg font-semibold border ${buttonVariants(
+                {
+                  variant: "outline",
+                }
+              )}`}
             >
               Login
-            </a> */}
-
-            <ModeToggle />
+            </a>
+            <a
+              rel="noreferrer noopener"
+              href="https://creator.capes.app/signup"
+              target="_blank"
+              className={`h-11 !rounded-lg font-semibold border ${buttonVariants(
+                {
+                  variant: "default",
+                }
+              )}`}
+            >
+              Get Started
+            </a>
+            {/* <ModeToggle /> */}
           </div>
         </NavigationMenuList>
       </NavigationMenu>

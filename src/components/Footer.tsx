@@ -19,7 +19,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
+          <h3 className="font-bold md:text-lg text-base">Follow US</h3>
           <div>
             <a
               rel="noreferrer noopener"
@@ -118,7 +118,7 @@ export const Footer = () => {
         </div> */}
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Legal</h3>
+          <h3 className="font-bold text-base md:text-lg">Legal</h3>
           <div>
             <a
               rel="noreferrer noopener"
@@ -145,7 +145,9 @@ export const Footer = () => {
 
       <section className="container pb-8 max-w-6xl space-y-4">
         {/* <hr className="w-full" /> */}
-        <h3>&copy; 2025 CAPES.APP - All rights reserved.</h3>
+        <h3 className="md:text-base text-sm">
+          &copy; 2025 CAPES.APP - All rights reserved.
+        </h3>
       </section>
     </footer>
   );

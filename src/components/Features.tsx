@@ -55,7 +55,7 @@ export const Features = () => {
   const isImageInView = useInView(imageRef, { once: true, amount: 0.3 });
 
   return (
-    <section className="container py-12 sm:py-32 mx-auto px-4">
+    <section className="container py-12 sm:py-32 mx-auto px-4" id="dashboard">
       <motion.div
         ref={sectionRef}
         initial={{ opacity: 0, y: 20 }}

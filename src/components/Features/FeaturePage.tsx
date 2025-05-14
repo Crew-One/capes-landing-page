@@ -50,7 +50,7 @@ export const FeaturePage = () => {
   return (
     <section
       className="py-10 md:py-20 bg-card rounded-t-[40px] overflow-hidden"
-      id="features"
+      id="capesFeatures"
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-col gap-10 md:gap-24">
